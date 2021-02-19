@@ -7,49 +7,183 @@
 }
 
 body {
-  font: 300 20px/1.6 'Cormorant Garamond', serif;
+  font: 300 16px/1.6 'Cormorant Garamond', serif;
+  text-align: center;
+  background-color: #fff;
+  color: #555;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-weight: 700;
 }
 
 h1 {
-
+  margin-top: 0;
 }
 
 h2 {
   font-size: 1rem;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 1.5rem;
+  font-weight: 400;
+  margin: 20px 0 10px;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+strong {
+  font-weight: 700;
 }
 
 img {
   width: 100%;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 
 /*=============================================
-  Layout Styles
+  Layout, Cosmetic & Helper
 =============================================*/
 
+nav li {
+  margin-bottom: 5px;
+}
 
+nav a {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: white;
+}
 
-/*=============================================
-  Cosmetic Styles
-=============================================*/
+nav a:hover {
+  color: rgb(46, 139, 87);
+  background-color: rgba(46, 139, 87, 0.05);
+  transition: all ease-in-out 0.25s;
+}
 
+header {
+  padding: 20px 0;
+  background-color: #fafafa;
+}
 
+main {
+  padding: 30px 0 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-image {
+  max-width: 200px;
+  margin-top: 40px;
+}
+
+#portfolio {
+  padding-bottom: 20px;
+}
+
+article img {
+  margin-top: 10px;
+}
+
+article p {
+  margin: 0 0 30px;
+}
+
+#skills {
+  padding: 40px 0 50px;
+  background-color: rgb(101, 91, 130);
+  color: white;
+}
+
+#skills li {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  background-color:rgb(217, 172, 69)
+}
+
+footer {
+  background-color: #fafafa;
+}
+
+aside {
+  padding: 40px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+footer ul {
+  display: inline-block;
+  width: calc(50% - 4px);
+  font-size: .75rem;
+  text-align: right;
+}
+
+footer a {
+  color: #555;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(46, 139, 87);
+  transition: all ease-in-out 0.25s;
+}
+
+.brand {
+  width: 50%;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: left;
+  display: inline-block;
+}
+
+.mobile-hide {
+  display: none;
+}
 
 
 /*=============================================
   Media Queries
 =============================================*/
 
+@media screen and (min-width: 768px) {
+  
+  .tablet-hide {
+    display: none;
+  }
 
+  .mobile-hide {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
