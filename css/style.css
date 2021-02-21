@@ -13,7 +13,7 @@
 }
 
 body {
-  max-width: 1024px;
+  max-width: 964px;
   margin: 0 auto;
   font: 300 16px/1.6 'Cormorant Garamond', serif;
   text-align: center;
@@ -260,10 +260,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-
-  body {
-    padding: 0 30px;
-  }
 
   .container {
     width: 95%;
